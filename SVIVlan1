@@ -1,0 +1,31 @@
+
+create a vlan:
+
+conf t
+inte vlan 99
+ip address 192.168.1.2 255.255.255.0
+
+ipv6 address 2001:db8:acad:99::11/64
+
+no shut
+
+end
+
+
+defautl gateay
+
+conf t
+
+ip default-gateway 192.168.1.1 
+
+
+to assign porst to vlan
+
+inte range f0/1/-24, g0/1-2
+switchport access vlan 99
+exit
+
+
+
+
+
